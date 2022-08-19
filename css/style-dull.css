@@ -1,0 +1,273 @@
+html {
+    display: block;
+    margin: auto;
+    border-collapse: collapse; 
+    box-sizing:border-box;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(78, 69, 56, 0.285);
+    border-collapse: collapse;
+    border: 2.5px solid rgb(46, 38, 38);
+}
+
+
+#saveLoadControlArea {
+    display:block;
+    text-align: left;
+    padding-left: 60px;
+    background-color: rgb(247, 242, 217);
+
+}
+
+
+#saveLoadControlArea > button, input {
+    font-size: 20px;
+}
+
+
+#listNames, #listLoadContainer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    padding-bottom: 25px;
+    align-items: flex-start;
+}
+
+#listHeading {
+    margin-left: 60px;
+    width: 100%;
+    
+}
+
+#listSave {
+    margin-left: 60px;
+    width: 100%;
+    
+}
+
+
+#listLoad {
+    margin-left: 100px;
+    width: 40%;
+}
+
+#listLoad2 {
+    margin-left: 100px;
+    width: 40%;
+}
+
+
+#controlArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(188, 206, 208);
+    align-items: center;
+    margin:0px;
+}
+
+#controlArea > div {
+    font-size: 24px;
+}
+
+#controlArea > div > button {
+    font-size: 24px;
+}
+
+#clearBothButtonDiv > button, #clearToDoButtonDiv > button, #clearDoneButtonDiv > button  {
+    font-size: 24px;
+}
+
+#inputArea {  
+    width: 40%;
+   padding-left: 20px;
+   padding-top: 10px;
+}
+#inputArea > form > input {
+    font-size: 24px;
+    padding: 2px;
+    margin-bottom:10px; 
+}
+
+#goal_date_input, #goal_time_input{
+    text-align:center;
+}
+
+
+#subContainerForControlArea {
+    
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+
+#clearBothButtonDiv {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#clearIndivListsBottonDiv {
+    text-align: center;
+    width: 100%
+
+}
+#clearToDoButtonDiv, #clearDoneButtonDiv {
+    width: 50%;
+    padding: 5%;
+    
+}
+
+
+
+#listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0px;
+}
+
+#listContainer > div {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    overflow-wrap: break-word;
+    /* border-color: rgb(169, 253, 243); */
+    /* border-width: 5px; */
+}
+
+#listContainer > div > h2 {
+    text-align: center;
+}
+
+#listContainer > div > div > ol {
+    padding-left: 20%;
+    padding-right: 10%;
+
+}
+#listContainer > div > ol > li > button {
+    font-size: 24px;
+    margin-left: 20px;
+
+}
+/* 
+#toDoDiv > h2 {
+    padding: 20px;
+    background-color: rgb(251, 255, 175);
+}
+
+#doneDiv > h2{
+    padding: 20px;
+    background-color: rgb(208, 250, 208);
+} */
+
+#toDoDiv {
+    width:50%;
+    background-color: rgb(184, 177, 189);
+}
+
+#doneDiv {
+    width: 50%;
+    background-color: rgb(186, 181, 186);
+} 
+
+#toDoList, #doneList {
+    font-size: 24px;
+}
+
+form {
+    display: inline;
+}
+
+button, input {
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#doneDiv, #toDoDiv, #controlArea, #saveLoadControlArea, #listNames, #highlightNote {
+
+    border: 2.5px solid rgb(46, 38, 38);
+    
+}
+/* article {
+
+    border: 5px solid rgb(46, 38, 38);
+
+
+} */
+
+
+header {
+
+    border: 2.5px solid rgb(46, 38, 38);
+    
+    /* border-left: 10px solid rgb(46, 38, 38);
+    border-top: 10px solid rgb(46, 38, 38);
+    border-right: 10px solid rgb(46, 38, 38); */
+
+}
+
+#buttonsToChangeCSS > button {
+    font-size: 18px;
+    margin: 5px;
+}
+
+
+.button {
+    /* font-size: 40px;  */
+    border: solid black 2px; 
+    padding: 5px;
+
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    /* border: none; */
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    /* padding: 10px; */
+    /* width: 200px; */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1 */
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

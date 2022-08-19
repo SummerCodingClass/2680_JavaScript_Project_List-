@@ -1,0 +1,165 @@
+html {
+    display: block;
+    margin: auto;
+    border-collapse: collapse; 
+
+
+}
+
+body {
+    display: block;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(116, 162, 134, 0.285);
+}
+
+
+#saveLoadControlArea {
+    display:block;
+    text-align: left;
+    padding-left: 60px;
+    background-color: rgb(159, 202, 255);
+
+}
+
+
+#saveLoadControlArea > button, input {
+    font-size: 20px;
+}
+
+
+
+
+#controlArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(199, 247, 247);
+    align-items: center;
+    margin:0px;
+}
+
+#controlArea > div {
+    font-size: 24px;
+}
+
+#controlArea > div > button {
+    font-size: 24px;
+}
+
+#clearBothButtonDiv > button, #clearToDoButtonDiv > button, #clearDoneButtonDiv > button  {
+    font-size: 24px;
+}
+
+#inputArea {  
+    width: 30%;
+   padding-left: 20px;
+   padding-top: 10px;
+}
+#inputArea > form > input {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+
+
+
+#subContainerForControlArea {
+    
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+
+#clearBothButtonDiv {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#clearIndivListsBottonDiv {
+    text-align: center;
+    width: 100%
+
+}
+#clearToDoButtonDiv, #clearDoneButtonDiv {
+    width: 50%;
+    padding: 5%
+    
+}
+
+
+
+#listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0px;
+}
+
+#listContainer > div {
+    width: 50%;
+    height: 100%;
+    border-color: rgb(169, 253, 243);
+    border-width: 5px;
+}
+
+#listContainer > div > h2 {
+    text-align: center;
+}
+
+#listContainer > div > ol {
+    padding-left: 20%;
+
+}
+#listContainer > div > ol > li > button {
+    font-size: 24px;
+    margin-left: 20px;
+
+}
+/* 
+#toDoDiv > h2 {
+    padding: 20px;
+    background-color: rgb(251, 255, 175);
+}
+
+#doneDiv > h2{
+    padding: 20px;
+    background-color: rgb(208, 250, 208);
+} */
+
+#toDoDiv {
+    width:50%;
+    background-color: rgb(251, 255, 175);
+}
+
+#doneDiv {
+    width: 50%;
+    background-color: rgb(208, 250, 208);
+} 
+
+#toDoList, #doneList {
+    font-size: 24px;
+}
+
+form {
+    display: inline;
+}
+
+button, input {
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#buttonsToChangeCSS > button {
+    font-size: 18px;
+    margin: 5px;
+}
